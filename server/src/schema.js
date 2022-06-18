@@ -7,10 +7,10 @@ const typeDefs = gql`
 type Query {
     "Get tracks array for homepage grid"
     tracksForHome: [Track!]!
-  }
+}
   
-  "A track is a group of Modules that teaches about a specific topic"
-  type Track {
+"A track is a group of Modules that teaches about a specific topic"
+type Track {
     id: ID!
     "The track's title"
     title: String!
@@ -22,16 +22,16 @@ type Query {
     length: Int
     "The number of modules this track contains"
     modulesCount: Int
-  }
+}
   
-  "Author of a complete Track"
-  type Author {
+"Author of a complete Track"
+type Author {
     id: ID!
     "Author's first and last name"
     name: String!
     "Author's profile picture url"
     photo: String
-  }
+}
   
 `;
 module.exports = typeDefs;
